@@ -1,0 +1,79 @@
+/* colors */
+:root {
+  --bg-primary-color: #ededed;
+  --bg-secondary-color: #eaf2fd;
+  --text-default-color: #000000;
+  --white-color: #fff;
+  --text-primary-color: #464646;
+  --text-secondary-color: #2a7ae4;
+}
+
+/* fonts */
+@font-face {
+  font-family: 'ralewaybold';
+  src: url('../font/raleway-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ralewayregular';
+  src: url('../font/raleway-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Generals styles */
+.color-text{
+  color: var(--text-primary-color);
+}
+
+/* header styles */
+.header{
+  width: 90%;
+  margin: 35px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.header__logo-img{
+  margin-right: 8px;
+}
+.header__logo-text{
+  font-family: 'ralewaybold';
+}
+
+/* nav & navbar styles */
+.navbar{
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar__item{
+  font-size: 16px;
+  margin-right: 32px;
+}
+
+.navbar__item-link{
+  position: relative;
+}
+
+.navbar__item-link::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: var(--text-primary-color);
+  width: 0;
+  left: 0;
+  top: calc(100% + 4px);
+  transition: ease-in-out .6s;
+  opacity: 0;
+}
+
+.navbar__item-link:hover::after{
+  width: 100%;
+  opacity: 0.8;
+}
