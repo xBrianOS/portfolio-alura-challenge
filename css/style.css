@@ -23,8 +23,19 @@
 }
 
 /* Generals styles */
+body{
+  background-color: var(--bg-primary-color);
+}
 .color-text{
   color: var(--text-primary-color);
+}
+.title{
+  font-size: 32px;
+  font-family: "ralewaybold";
+}
+.wrap{
+  width: 90%;
+  margin: auto;
 }
 
 /* header styles */
@@ -51,14 +62,16 @@
   display: flex;
   flex-direction: row;
 }
-
 .navbar__item{
   font-size: 16px;
   margin-right: 32px;
+  font-family: "ralewayregular";
 }
-
 .navbar__item-link{
   position: relative;
+}
+.navbar-contact{
+  font-family: "ralewaybold";
 }
 
 .navbar__item-link::after{
@@ -79,7 +92,6 @@
 }
 
 /* Hero */
-
 .hero{
   width: 90%;
   margin: 64px auto;
@@ -87,39 +99,50 @@
   align-items: center;
   gap: 17px;
 }
-
 .hero__primary{
   width: 750px;
 }
-
 .hero__title{
   font-size: 52px;
   font-family: 'ralewaybold';
-  line-height: 1.5;
+  line-height: 1.2;
   margin-bottom: 24px;
 }
-
 .hero__paragraph{
   font-size: 22px;
   font-family: "ralewayregular";
   line-height: 1.5;
   margin-bottom: 24px;
 }
-
 .hero__links{
   display: flex;
 }
-
 .hero__link-item{
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-right: 32px;
 }
-
 .hero__secundary-img{
   width: 368px;
   height: 368px;
   object-fit: cover;
   border-radius: 50%;
+}
+
+/* Sobre Mi / About me Section */
+.about-me{
+  background-color: var(--bg-secondary-color);
+}
+.about-me__text{
+  width: 65%;
+  padding: 64px 0px;
+}
+.about-me__paragraph{
+  font-family: "ralewayregular";
+  line-height: 1.5;
+  margin-top: 16px;
+}
+.about-me__img{
+  margin-top: 16px;
 }
