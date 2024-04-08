@@ -129,9 +129,13 @@ body{
   object-fit: cover;
   border-radius: 50%;
 }
+.social-media__link{
+  font-family: "ralewayregular";
+  margin-right: 4px;
+}
 
-/* Sobre Mi / About me Section */
-.about-me{
+/* Sobre Mi / About me Section styles */
+.about-me, .formations{
   background-color: var(--bg-secondary-color);
 }
 .about-me__text{
@@ -146,3 +150,124 @@ body{
 .about-me__img{
   margin-top: 16px;
 }
+
+/* Skills, Hobbies & Formation sections styles */
+.hobbies__title, .skills__title, .formations__title, .projects__title{
+  text-align: center;
+  padding-top: 32px;
+}
+.hobbies__items, .skills__items, .formations__items{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 0;
+  margin-bottom: 48px;
+}
+.hobbie__item svg, .skill__item svg{
+  color: var(--text-secondary-color);
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+.hobbie__item, .skill__item{
+  width: 176px;
+  height: 176px;
+  background-color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 16px;
+  transition: ease-in-out .6s;
+}
+.hobbie__item:hover, .skill__item:hover{
+  scale: 1.1;
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+}
+.skill__item-name, .hobbie__item-name{
+  font-family: "ralewaybold";
+  font-size: 16px;
+}
+.formation__item-primary-box{
+  width: 368px;
+  height: 186px;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+}
+.formation__item-primary-box > img{
+  width: 140px;
+  height: 140px;
+}
+.formation-name{
+  font-family: "ralewaybold";
+  font-size: 22px;
+  margin: 8px 0;
+}
+.formation-time{
+  font-family: "ralewayregular";
+  font-size: 16px;
+}
+
+/* projects styles */
+
+.projects__items{
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.projects__items:nth-child(even){
+  flex-direction: row-reverse;
+}
+.project-name{
+  font-family: "ralewaybold";
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+.project-desc{
+  font-family: "ralewayregular";
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.project-buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.repo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--text-secondary-color);
+  width: 115px;
+  height: 50px;
+  transition: ease-in-out .4s;
+}
+.repo:hover{
+  background-color: var(--bg-secondary-color);
+  scale: 1.1;
+}
+.repo-link{
+  color: var(--text-secondary-color);
+}
+.demo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text-secondary-color);
+  border: none;
+  width: 115px;
+  height: 50px;
+  transition: ease-in-out .4s;
+}
+.demo:hover{
+  opacity: .8;
+  scale: 1.1;
+}
+.demo-link{
+    color: var(--white-color);
+  }
