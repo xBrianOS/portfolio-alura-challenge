@@ -328,6 +328,7 @@ body{
   outline: none;
   padding: 18px;
   transition: ease-out .4s;
+  resize: none;
 }
 .input > input:focus, .input > textarea:focus{
   border-bottom: 2px solid var(--text-secondary-color);
@@ -346,16 +347,17 @@ body{
   font-family: "ralewayregular";
   transition: ease-out .4s;
 }
-.input > input:focus~label, .input > input:valid~label{
-  top:20%; 
-  color: var(--text-secondary-color);
-}
-.input > textarea:focus~label, .input > textarea:valid~label{
-  top:5%; 
-  color: var(--text-secondary-color);
-}
 textarea{
-  height: 125px;
+  height:125px;
+}
+.input > input:focus~label, .input > input:valid~label{
+  top: 15%;
+  color: var(--text-secondary-color);
+} 
+.input > textarea:focus~label, .input > textarea:valid~label{
+  top: 10%;
+  color: var(--text-secondary-color);
+
 }
 footer{
   background-color: var(--white-color);
@@ -366,4 +368,34 @@ footer{
 .footer__text{
   margin-bottom: 4px;
   font-size: 16px;
+}
+
+/* media query */
+
+/* tablet */
+
+@media (width <=  1024px) {
+
+  .navbar__item:nth-child(-n + 5){
+    display: none;
+  }
+  .title, .contacts__title{
+    font-size: 22px;
+  }
+  .hero__title{
+    font-size: 22px;
+    text-wrap: pretty;
+    margin: 8px 0;
+  }
+  .hero__paragraph, .hero__links{
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  .hero__secundary-img{
+    width: 145px;
+    height:145px ;
+  }
+  .about-me__text{
+    width: 90%;
+  }
 }
