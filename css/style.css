@@ -329,7 +329,7 @@ body {
 }
 .input > input {
   width: 704px;
-  height: 48px;
+  height: 56px;
   background-color: var(--white-color);
   color: var(--text-default-color);
   font-family: 'ralewayregular';
@@ -359,7 +359,7 @@ body {
   transition: ease-out 0.4s;
 }
 #message {
-  height: 133px;
+  height: 110px;
 }
 .input > input:focus ~ label,
 .input > input:valid ~ label {
@@ -380,7 +380,6 @@ footer {
 /* media query */
 
 /* tablet */
-
 @media (width <= 1024px) {
   .navbar__item:nth-child(-n + 5) {
     display: none;
@@ -412,16 +411,12 @@ footer {
     width: 90%;
   }
   .hobbie__item,
-  .skill__item {
+  .skill__item,  .formation__item-primary-box  {
     width: 224px;
     height: 118px;
   }
   .formation-time {
     font-size: 14px;
-  }
-  .formation__item-primary-box {
-    width: 224px;
-    height: 118px;
   }
   .formation__item-primary-box > img {
     width: 84px;
@@ -446,6 +441,69 @@ footer {
     width: 100%;
   }
 }
+
+/* cellphone */
 @media (width <= 768px) {
-  .he;
+  .header__logo-text {
+    font-size: 16px;
+  }
+  .navbar-contact {
+    font-family: 'ralewayregular';
+    margin-right: 0;
+  }
+  .hero{
+    margin-top: 32px;
+    flex-direction: column;
+  }
+  .hero__secundary-img{
+    width:98px;
+    height:98px;
+  }
+  .hero__secundary {
+    order: 1;
+    align-self: flex-start;
+  }
+  .hero__paragraph, .about-me__paragraph{
+    font-size: 14px;
+    text-wrap: pretty;
+  }
+  .hero__primary {
+    order: 2;
+    width: 100%;
+  }
+  .hero__link-item{
+    margin-right: 8px;
+    font-size: 14px;
+    justify-content: center;
+  }
+  .hero__link-item > a > img{
+    width: 16px;
+  }
+  .hobbie__item,
+  .skill__item {
+    width:156px;
+    height:118px;
+  }
+  .formation__item-primary-box{
+    width: 296px;
+  }
+  .project-image > img {
+    width: 296px;
+    height: 144px;
+  }
+  .project-name{
+    font-size: 16px;
+  }
+  .project-desc{
+    font-size: 14px;
+  }
+  .demo, .repo{
+    width: 108px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .input > input {
+    width: 95%;
+    height: 56px;
+  }
 }
