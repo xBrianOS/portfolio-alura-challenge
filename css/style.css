@@ -1,13 +1,16 @@
 /* colors */
 :root {
+  --white-color: #fff;
   --bg-color: #f5f5f5;
   --bg-primary-color: #ededed;
   --bg-secondary-color: #eaf2fd;
+  --bg-dark-secondary-color: #0e0e0e;
   --text-default-color: #000000;
-  --white-color: #fff;
   --text-primary-color: #464646;
   --text-secondary-color: #2a7ae4;
   --text-color: #a2a2a2;
+  --bg-dark-color: #0b090a;
+  --ligth-text-color: #f4f3ee;
 }
 
 /* fonts */
@@ -26,11 +29,11 @@
 
 /* Generals styles */
 body {
-  background-color: var(--bg-color);
+  background-color: light-dark(var(--bg-color), var(--bg-dark-color));
   overflow-x: scroll;
 }
 .color-text {
-  color: var(--text-primary-color);
+  color: light-dark(var(--text-primary-color, var(--white-color)));
 }
 .title {
   font-size: 32px;
@@ -57,7 +60,7 @@ body {
   margin-right: 8px;
 }
 .header__logo-text {
-  font-family: 'ralewaybold';
+  font-family: 'ralewaybold'; 
 }
 
 /* nav & navbar styles */
@@ -81,7 +84,7 @@ body {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: var(--text-primary-color);
+  background-color: light-dark(var(--text-primary-color), var(--ligth-text-color));
   width: 0;
   left: 0;
   top: calc(100% + 4px);
@@ -110,12 +113,14 @@ body {
   font-family: 'ralewaybold';
   line-height: 1.2;
   margin-bottom: 24px;
+  
 }
 .hero__paragraph {
   font-size: 22px;
   font-family: 'ralewayregular';
   line-height: 1.5;
   margin-bottom: 24px;
+  
 }
 .hero__links {
   display: flex;
@@ -141,7 +146,7 @@ body {
 .about-me,
 .formations,
 .contacts {
-  background-color: var(--bg-secondary-color);
+  background-color: light-dark(var(--bg-secondary-color), var(--bg-dark-secondary-color))
 }
 .about-me__text {
   width: 65%;
@@ -164,6 +169,8 @@ body {
 .contacts__title {
   text-align: center;
   padding-top: 32px;
+  color: light-dark(var(--text-primary-color), var(--ligth-text-color));
+
 }
 .hobbies__items,
 .skills__items,
@@ -187,7 +194,7 @@ body {
 .skill__item {
   width: 176px;
   height: 176px;
-  background-color: var(--white-color);
+  background-color: light-dark(var(--white-color), #111111);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -317,6 +324,7 @@ body {
   font-family: 'ralewayregular';
   font-size: 16px;
 }
+
 .form > input[type='submit'] {
   width: 145px;
   height: 50px;
@@ -330,8 +338,8 @@ body {
 .input > input {
   width: 704px;
   height: 56px;
-  background-color: var(--white-color);
-  color: var(--text-default-color);
+  background-color: light-dark(var(--bg-primary-color), var(--bg-dark-color));
+  color: light-dark(var(--text-primary-color, var(--white-color)));
   font-family: 'ralewayregular';
   font-size: 16px;
   border: none;
@@ -367,7 +375,7 @@ body {
   color: var(--text-secondary-color);
 }
 footer {
-  background-color: var(--white-color);
+  background-color: light-dark(var(--white-color), var(--bg-dark-color)),;
   text-align: center;
   font-family: 'ralewayregular';
   padding: 32px 0;
