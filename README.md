@@ -1,6 +1,6 @@
 # Portafolio Challenge Oracle y Alura Latam
 
-Este Portafolio es el challenge #2 de Oracle ONE (Oracle Next Education) junto a la plataforma Alura Latam. Este proyecto fue realizado con HTML, CSS y JavaScript.
+Portafolio del challenge #2 del programa ONE junto con Alura Latam.
 
-## Capturas de pantalla
+# Herramientas ul
 
