@@ -33,16 +33,16 @@
                 <p class="hero__paragraph color-text">Soy formada en lorem ipsum sit amet consectetur e actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</p>
                 <div class="hero__links">
                     <div class="hero__link-item">
-                        <a href="https://github.com/xBrianOS" class="social-media__link color-text">Github</a>
-                        <a href="https://github.com/xBrianOS"><img src="images/arrow_back.png" alt=""></a>
+                        <a href="https://github.com" target="_blank" class="social-media__link color-text">Github</a>
+                        <a href="https://github.com" target="_blank"><img src="images/arrow_back.png" alt=""></a>
                     </div>
                     <div class="hero__link-item">
-                        <a href="https://www.linkedin.com/in/brian-ogando/" class="social-media__link color-text">Linkedin</a>
-                        <a href="https://www.linkedin.com/in/brian-ogando/"><img src="images/arrow_back.png" alt=""></a>
+                        <a href="https://www.linkedin.com" target="_blank" class="social-media__link color-text">Linkedin</a>
+                        <a href="https://www.linkedin.com" target="_blank"><img src="images/arrow_back.png" alt=""></a>
                     </div>
                     <div class="hero__link-item">
-                        <a href="https://twitter.com/xbrian999" class="social-media__link color-text">X/Twitter</a>
-                        <a href="https://twitter.com/xbrian999"><img src="images/arrow_back.png" alt=""></a>
+                        <a href="https://x.com" target="_blank" class="social-media__link color-text">X/Twitter</a>
+                        <a href="https://x.com" target="_blank"><img src="images/arrow_back.png" alt=""></a>
                     </div>
                     <div class="hero__link-item">
                         <a href="" class="social-media__link color-text">Curriculo</a>
@@ -206,18 +206,21 @@
                             <form class="form" id="form" action="">
 
                                 <div class="input">
-                                    <input type="text" name="name" required>
+                                    <input type="text" name="name" required id="name">
                                 <label class="input__label">Nombre</label>
+                                <p class="hidden name-validation">Por favor, Intruduzca un nombre valido</p>
                                 </div>
 
                                 <div class="input">
-                                <input type="text" required>
+                                <input type="text" id="email" required>
                                 <label class="input__label">E-mail</label>
+                                <p class="hidden email-validation">Por favor, Intruduzca un email valido</p>
                                 </div>
 
                                 <div class="input">
-                                    <input type="text" name="problem" required>
-                                <label class="input__label">Asunto</label>
+                                    <input type="text" name="issue" id="issue" required>
+                                    <label class="input__label">Asunto</label>
+                                <p class="hidden issue-validation">Por favor, Intruduzca un Mensaje valido</p>
                                 </div>
 
                                 <div class="input ">
